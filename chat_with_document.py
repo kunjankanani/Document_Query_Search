@@ -71,14 +71,14 @@ def main():
         print(f"\n> Answer (took {round(end - start, 2)} s.):")
         em = model.encode([answer,docs[0].page_content])
 
-        if (cos_sim(em[0], em[1])>0.80):
+        if (cos_sim(em[0], em[1])>0.60):
            print(answer)
            print("\n> " + docs[0].metadata["source"] + ":")
            print(docs[0].page_content)
            score = cos_sim(em[0], em[1])
            print("\n> "+f"Score :- {score}")
         else:
-           print("we have no such data regading your query, sorry !!")
+           print("we have no such data regading your query, in your document !!")
         
 
 def parse_arguments():
