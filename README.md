@@ -72,6 +72,11 @@ You also chenge LLM model
 chenge MODEL_PATH
 ```
 
+```
+✨  Your document is placed inside the source_documents folder.
+✨  It is also possible to insert multiple documents at time.
+```
+
 ****
 
 # Demo
